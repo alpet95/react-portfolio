@@ -1,0 +1,9 @@
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxContainerWidth: 1600px;
+$containerPadding: 15px;
+$containerWidth: $maxContainerWidth + $containerPadding;
+$pc: $containerWidth;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$small: 479.98px;
