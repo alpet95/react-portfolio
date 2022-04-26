@@ -1,15 +1,17 @@
 import React, { Fragment } from "react";
 // ========== components ==========
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-// ========== styles ==========
-import "./app.scss";
+import TopBar from "./components/layout/TopBar";
+import About from "./components/layout/About";
+import Portfolio from "./components/layout/Portfolio";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <Fragment>
+      <TopBar />
       <About />
       <Portfolio />
+      <Footer />
     </Fragment>
   );
 }

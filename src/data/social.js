@@ -1,7 +1,7 @@
-import github from "../images/github.png";
-import facebook from "../images/facebook.png";
-import linkedin from "../images/linkedin.png";
-import email from "../images/email.png";
+import github from "../images/contacts/github.png";
+import facebook from "../images/contacts/facebook.png";
+import linkedin from "../images/contacts/linkedin.png";
+import email from "../images/contacts/email.png";
 
 export const social = [
   {

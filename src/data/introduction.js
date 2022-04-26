@@ -1,9 +1,9 @@
-import html from "../images/html.svg";
-import css from "../images/css.svg";
-import js from "../images/js.svg";
-import react from "../images/react.svg";
-import vue from "../images/vue.svg";
-import scss from "../images/scss.svg";
+import html from "../images/stack/html.svg";
+import css from "../images/stack/css.svg";
+import js from "../images/stack/js.svg";
+import react from "../images/stack/react.svg";
+import vue from "../images/stack/vue.svg";
+import scss from "../images/stack/scss.svg";
 
 export const technologies = [
   {
