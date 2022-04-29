@@ -14,34 +14,89 @@ body {
   font-family: Roboto;
   font-size: 16px;
   color: #000;
-  // background-color: #fdfcfa;
 }
 
 section {
-  padding-top: 80px;
   width: 100%;
+  // min-width: 319.99px;
   height: 100vh;
-  // background: lightblue;
+
+  @media screen and (max-width: $laptop) and (max-height: 900px) {
+    height: 100%;
+  }
 }
 
 .container {
-  max-width: $maxContainerWidth;
+  // max-width: $maxContainerWidth;
+  width: 100%;
+  min-width: 319.99px;
   height: 100%;
   padding: 0 $containerPadding;
   margin: 0 auto;
   display: flex;
-  // background-color: lightcoral;
+  flex-direction: column;
 
-  @media (max-width: $pc) {
+  @media screen and (max-width: 479.99px) {
+    // background-color: lightgoldenrodyellow;
+  }
+
+  @media screen and (max-width: 767.99px) and (min-width: $mobile) {
+    // background-color: lightgray;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    // background-color: lightseagreen;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-width: 1150px;
+    // background-color: lightcyan;
+  }
+
+  // @media screen and (max-width: $maxContainerWidth) and (min-width: $desktop) {
+  //   // max-width: 1000px;
+  //   // background-color: lightcyan;
+  // }
+
+  @media screen and (min-width: $maxContainerWidth) {
     max-width: 1350px;
+    // background-color: lightgrey;
   }
 
-  @media (max-width: $tablet) {
-    max-width: 750px;
+  @media screen and (min-width: 1920px) {
+    max-width: $maxContainerWidth;
+    // background-color: lightcoral;
   }
 
-  @media (max-width: $tablet) {
-    max-width: none;
-    padding: 0 $containerPadding;
-  }
+  // @media screen and (min-width: $small) {
+  //   max-width: 479.99px;
+  //   background-color: lightgoldenrodyellow;
+  // }
+
+  // @media screen and (min-width: $mobile) {
+  //   max-width: 767.99px;
+  //   background-color: lightgray;
+  // }
+
+  // @media screen and (min-width: $tablet) {
+  //   max-width: 1023.99px;
+  //   background-color: lightseagreen;
+  // }
+
+  // @media screen and (min-width: $laptop) {
+  //   max-width: 1199.99px;
+  //   background-color: lightgray;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   max-width: 1600px;
+  //   background-color: lightcyan;
+  // }
+
+  // @media screen and (min-width: $pc) {
+  //   max-width: 1600px;
+  //   background-color: lightcyan;
+  // }
 }

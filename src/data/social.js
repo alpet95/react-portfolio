@@ -7,14 +7,17 @@ export const social = [
   {
     id: "github_icon",
     src: github,
+    link: "https://github.com/alpet95",
   },
   {
     id: "facebook_icon",
     src: facebook,
+    link: "https://www.facebook.com/alexpetrov0895",
   },
   {
     id: "linkedin_icon",
     src: linkedin,
+    link: "https://www.linkedin.com/in/alpet95",
   },
 ];
 

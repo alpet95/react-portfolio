@@ -1,29 +1,67 @@
+@import "../core/variables.scss";
+
 .portfolio {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // background-color: lightblue;
 
   &__line {
-    width: 10%;
-    height: 7px;
-    margin: 0 auto;
-    margin-top: 3rem;
+    width: 40%;
+    height: 5px;
+    margin: 1rem auto 2rem;
     background-color: #273746;
   }
 
   &__heading {
-    margin-top: 3rem;
+    // margin-top: 3rem;
     margin-bottom: 1rem;
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 700;
   }
 
   &__list {
     width: 100%;
-    padding: 0 3rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: center;
+    // background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .portfolio__list {
+    padding: 0 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .portfolio {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .portfolio {
+    justify-content: center;
+
+    &__heading {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: $maxContainerWidth) {
+  .portfolio-item {
+    width: 380px;
   }
 }

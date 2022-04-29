@@ -8,7 +8,7 @@ import "../../scss/components/_portfolio.scss";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio">
       <div className="container">
         <div className="portfolio">
           <div className="portfolio__line"></div>
