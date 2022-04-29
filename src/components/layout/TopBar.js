@@ -10,7 +10,7 @@ const TopBar = () => {
       <div className="container">
         <div className="email">
           <div className="email__address">
-            <img src={mail.src} />
+            <img src={mail.src} alt={mail.id} />
             <span>alexpetrov0895@gmail.com</span>
           </div>
         </div>

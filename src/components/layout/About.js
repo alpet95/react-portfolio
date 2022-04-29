@@ -17,7 +17,7 @@ const About = () => {
         {/* ========== left block ========== */}
         <div className="left">
           <div className="avatar">
-            <img className="avatar__image" src={avatar} />
+            <img className="avatar__image" src={avatar} alt="avatar" />
           </div>
           <div className="contacts">
             <div className="contacts__items">
@@ -54,7 +54,7 @@ const About = () => {
                   key={technology.id}
                   id={technology.id}
                 >
-                  <img src={technology.icon} />
+                  <img src={technology.icon} alt={technology.id} />
                   <span>{technology.name}</span>
                 </div>
               ))}
@@ -67,7 +67,7 @@ const About = () => {
                   key={language.id}
                   id={language.id}
                 >
-                  <img src={language.icon} />
+                  <img src={language.icon} alt={language.id} />
                   <span>{language.text}</span>
                 </div>
               ))}
