@@ -18,7 +18,6 @@
 // ========== left block ==========
 .left {
   position: relative;
-  // flex: 40%;
 }
 
 .avatar {
@@ -26,9 +25,6 @@
   width: 250px;
   height: 250px;
   margin-bottom: 15px;
-  // width: 450px;
-  // height: 450px;
-  // margin-bottom: 20px;
   border-radius: 50%;
   box-shadow: 2px 2px 2px 0px #273746;
   background: radial-gradient(#fff 10px, #73c6b6 60%);
@@ -46,18 +42,10 @@
 .contacts {
   display: flex;
   align-items: center;
-  // background-color: lightblue;
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
-  // flex-direction: column;
 
   &__items {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
-    // margin-bottom: 20px;
-    // flex-direction: column;
   }
 
   &__line {
@@ -69,14 +57,7 @@
 }
 
 // ========== right block ==========
-.right {
-  // flex: 60%;
-}
-
 .introduction {
-  // padding: 0 25px;
-  // background-color: lightblue;
-
   &__text {
     margin: 0 auto;
     text-align: center;
@@ -86,7 +67,6 @@
       font-size: 40px;
       font-weight: 700;
       color: #273746;
-      // font-size: 55px;
     }
 
     h3 {
@@ -98,7 +78,6 @@
     }
 
     p {
-      // font-size: 18px;
       line-height: 1.4;
       text-align: left;
 
@@ -110,17 +89,12 @@
 }
 
 .stack {
-  // max-width: 700px;
   margin: 5px auto;
-  // padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // background-color: lightblue;
 
   &__item {
-    // width: 160px;
-    // height: 125px;
     width: 100px;
     height: 80px;
     margin: 10px;
@@ -150,9 +124,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // background-color: lightblue;
-  // flex-wrap: wrap;
-  // align-items: center;
 
   &__item {
     padding: 5px;
@@ -167,7 +138,6 @@
 
     span {
       font-weight: 500;
-      // font-size: 18px;
     }
   }
 }
@@ -179,8 +149,6 @@
   }
 
   .introduction__text {
-    // background-color: lightblue;
-
     h1 {
       font-size: 45px;
     }
@@ -231,7 +199,6 @@
 
   .stack {
     max-width: 500px;
-    // background-color: lightblue;
   }
 }
 
