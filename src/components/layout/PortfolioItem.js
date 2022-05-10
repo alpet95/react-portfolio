@@ -6,7 +6,7 @@ const PortfolioItem = (props) => {
   return (
     <div className="portfolio-item">
       <div className="portfolio-item__showcase">
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noreferrer">
           <img
             src={props.img}
             alt={`portfolio_${props.id}`}
