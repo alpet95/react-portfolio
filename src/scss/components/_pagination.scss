@@ -1,0 +1,27 @@
+@import "../core/variables.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 10px;
+
+  &_item {
+    padding: 10px 18px;
+    margin-right: 5px;
+    border: 1px solid #73c6b6;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background-color: #7bd1c0;
+    }
+
+    &__active {
+      background-color: #7bd1c0;
+      color: #fff;
+    }
+  }
+}
