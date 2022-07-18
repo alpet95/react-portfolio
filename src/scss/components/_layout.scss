@@ -18,9 +18,27 @@
   height: 100vh;
 }
 
+@media screen and (max-width: 500px) and (min-height: 708px) {
+  .portfolio-full-height {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 908px) {
+  .portfolio-full-height {
+    height: 100vh;
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .home-full-height,
   .portfolio-full-height {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: $tablet) and (min-height: 948px) {
+  .home-full-height {
     height: 100vh;
   }
 }
