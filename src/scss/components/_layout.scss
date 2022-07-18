@@ -37,6 +37,18 @@
   }
 }
 
+@media screen and (min-width: $tablet) and (max-height: 620px) {
+  .portfolio-full-height {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-height: 670px) {
+  .home-full-height {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: $tablet) and (min-height: 948px) {
   .home-full-height {
     height: 100vh;
