@@ -1,0 +1,29 @@
+@import "../../scss/core/variables.scss";
+
+.error-block {
+  padding: 15px;
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-icon {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #c0392b;
+  }
+
+  &-message {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width) {
+  .error-block {
+    height: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../core/variables.scss";
+
+.layout {
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-full-height {
+  height: 100vh;
+}
+
+@media screen and (min-width: $tablet) {
+  .home-full-height,
+  .portfolio-full-height {
+    height: 100vh;
+  }
+}

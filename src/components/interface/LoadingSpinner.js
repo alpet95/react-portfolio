@@ -1,5 +1,6 @@
 import React from "react";
-// ========== styles ==========
+import Container from "./Container";
+
 import "../../scss/components/_loading-spinner.scss";
 
 const LoadingSpinner = () => {

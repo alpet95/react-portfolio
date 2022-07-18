@@ -1,33 +1,34 @@
-import React, { Fragment, useState, useEffect } from "react";
-// ========== components ==========
+import React, { Suspense } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+
+import Layout from "./components/layout/Layout";
 import LoadingSpinner from "./components/interface/LoadingSpinner";
-import TopBar from "./components/layout/TopBar";
-import About from "./components/layout/About";
-import Portfolio from "./components/layout/Portfolio";
-import Footer from "./components/layout/Footer";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const Portfolio = React.lazy(() => import("./pages/Portfolio"));
+const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 function App() {
-  // ========== hooks ==========
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
-  let renderPage = loading ? (
-    <LoadingSpinner />
-  ) : (
-    <Fragment>
-      <TopBar />
-      <About />
-      <Portfolio />
-      <Footer />
-    </Fragment>
+  return (
+    <Layout>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home"></Redirect>
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </Suspense>
+    </Layout>
   );
-
-  return renderPage;
 }
 
 export default App;

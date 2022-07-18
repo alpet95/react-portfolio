@@ -8,20 +8,25 @@
   margin-bottom: 10px;
 
   &_item {
-    padding: 10px 18px;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 5px;
-    border: 1px solid #73c6b6;
-    transition: all 0.3s linear;
+    border: 1px solid #273746;
+    font-weight: 500;
+    transition: all 0.2s linear;
     cursor: pointer;
 
-    &:hover {
+    &:hover:not(.active) {
       color: #fff;
-      background-color: #7bd1c0;
-    }
-
-    &__active {
-      background-color: #7bd1c0;
-      color: #fff;
+      background-color: #ffa500;
     }
   }
+}
+
+.active {
+  color: #fff;
+  background-color: #5499c7;
 }

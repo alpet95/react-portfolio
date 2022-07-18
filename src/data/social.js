@@ -1,7 +1,6 @@
 import github from "../images/contacts/github.png";
 import facebook from "../images/contacts/facebook.png";
 import linkedin from "../images/contacts/linkedin.png";
-import email from "../images/contacts/email.png";
 
 export const social = [
   {
@@ -20,8 +19,3 @@ export const social = [
     link: "https://www.linkedin.com/in/alpet95",
   },
 ];
-
-export const mail = {
-  id: "email_icon",
-  src: email,
-};

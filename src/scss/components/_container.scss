@@ -1,0 +1,29 @@
+@import "../core/_variables.scss";
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  padding: 0 $containerPadding;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 680px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-width: 900px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1050px;
+  }
+
+  @media screen and (min-width: $large) {
+    max-width: 1200px;
+  }
+}

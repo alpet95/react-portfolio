@@ -1,16 +1,15 @@
 import React from "react";
-// ========== styles ==========
 import "../../scss/components/_footer.scss";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="container">
         <div className="footer__content">
-          <span>&copy; Alpet 2022</span>
+          <span className="footer-copyright">Alpet &copy; 2022</span>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
